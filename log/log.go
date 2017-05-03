@@ -23,7 +23,7 @@ func GetLogger() *Logger {
 
 // Output = Info
 func (l *Logger) Output(calldepth int, s string) error {
-	l.Info(s)
+	l.Debug("Output:%s", s)
 	return nil
 }
 
